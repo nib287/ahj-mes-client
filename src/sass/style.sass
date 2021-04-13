@@ -46,7 +46,8 @@ html
     background-image: url(../img/ahoy.jpg)
 
     .container
-        padding: $paddind_containerh
+        display: flex
+        flex-direction: column  
         overflow-y: auto
         &::-webkit-scrollbar-track 
             box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset
@@ -144,8 +145,6 @@ html
         width: 70%     
 
     .container
-        display: flex
-        flex-direction: column  
         height: 95vh
         &::-webkit-scrollbar 
             width: 10px 
@@ -175,8 +174,6 @@ html
         height: 100%
         
     .container
-        display: flex
-        flex-direction: column  
         height: 95%
         &::-webkit-scrollbar 
             width: 10px 
