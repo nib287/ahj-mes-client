@@ -21,7 +21,7 @@ export default class Controller {
                 case 'text':
                     const userStyle = this.getUserStyle(data.name);
                     this.createMessegeElement(data.value, userStyle.name, data.date, userStyle.color, userStyle.side); 
-                    if( this.containerMessages.length) {
+                    if(this.containerMessages.childNodes.length) {
                         this.containerMessages.lastElementChild.scrollIntoView(true);
                     }
                     break;
@@ -42,7 +42,7 @@ export default class Controller {
                             this.createUserElement(userLogin.name, userLogin.color);
                         });
                         
-                        if( this.containerMessages.length) {
+                        if(this.containerMessages.childNodes.length) {
                             this.containerMessages.lastElementChild.scrollIntoView(true);
                         }
                     }
